@@ -8,12 +8,10 @@ import { ApiCallService } from '../../myservices/api-call.service'
 })
 export class GetActivityComponent {
   
-  @Input() activity:any
+  @Input() ActivityName:String;
   constructor(private activityCall:ApiCallService){}
 
-  GetRandomActivity(){
-    this.activityCall.getActivityWithoutPara().subscribe(data=>(
-      console.log(data)
-    ))
-  }
+  // GetRandomActivity(){
+  //   this.ActivityName=this.activityCall.getActivityWithoutPara();
+  // }
 }

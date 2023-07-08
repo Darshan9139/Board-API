@@ -1,6 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
 
 <div class="row">
     <div class="col m-5">
@@ -49,12 +46,12 @@
               <ul class="d-grid gap-4 my-5 list-unstyled">
                 <li class="d-flex gap-4">
                   <div>
-                    <h4 class="mb-0">{{activity.activity}}</h4>
+                    <h4 class="mb-0">{{Activity?.activity}}</h4>
                   </div>
                 </li>
                 
               </ul>
-              <button type="button" class="btn btn-lg btn-primary mt-auto w-100" (click)="GetRandomActivity()"data-bs-dismiss="modal">Random</button>
+              <button type="button" class="btn btn-lg btn-primary mt-auto w-100" (click)="GetRandomActivity()">Random</button>
             </div>
         
           </div>

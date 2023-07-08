@@ -8,8 +8,7 @@ export class ApiCallService {
 
   constructor(private http: HttpClient) { }
   
-  API_Url = "http://www.boredapi.com/api/activity/"
-
+  API_Url = "https://www.boredapi.com/api/activity"
   getActivity(Category: string, Count: number) {
     return this.http.get(this.API_Url,
       {
@@ -20,6 +19,7 @@ export class ApiCallService {
         }
       }
     )
+    
   }
   getActivityWithoutPara(){
     return this.http.get(this.API_Url)
