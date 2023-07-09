@@ -5,16 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './mycomponents/header/header.component';
 import { SearchActivityComponent } from './mycomponents/search-activity/search-activity.component';
-import { GetActivityComponent } from './mycomponents/get-activity/get-activity.component';
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { DocumentComponent } from './mycomponents/document/document.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchActivityComponent,
-    GetActivityComponent
+    DocumentComponent
   ],
   imports: [
     BrowserModule,
