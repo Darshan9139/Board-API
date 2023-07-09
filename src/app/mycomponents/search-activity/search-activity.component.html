@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
-        <div class="col m-5">
+        <div class="col m-3">
             <div class="modal-content rounded-4 shadow">
-                <div class="modal-body p-5">
+                <div class="modal-body p-3">
                     <form (ngSubmit)="SearchActivity()" class="needs-validation" ngNativeValidate>
                         <h2 class="fw-bold mb-0">Search Activity</h2>
                         <ul class="d-grid gap-4 my-5 list-unstyled">
@@ -39,15 +39,18 @@
                 </div>
             </div>
         </div>
-        <div class="col m-5">
+        <div class="col m-3">
             <div class="modal-content rounded-4 shadow">
-                <div class="modal-body p-5">
+                <div class="modal-body p-3">
                     <h2 class="fw-bold mb-0">Activity</h2>
 
                     <ul class="d-grid gap-4 my-5 list-unstyled">
                         <li class="d-flex gap-4">
                             <div>
                                 <h4 class="mb-0">{{Activity?.activity}}</h4>
+                                <div *ngIf="Activity?.error" class="alert alert-danger" role="alert">
+                                    No activity found with the specified parameters
+                                  </div>
                             </div>
                         </li>
 
